@@ -1,0 +1,33 @@
+:root {
+    --bg-color: #d4d2c3;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+  }
+  canvas {
+    display: block;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
+  .border {
+    padding: 15pt;
+  }
+  
+  .centered {
+    text-align: center;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
