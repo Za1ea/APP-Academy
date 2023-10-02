@@ -170,6 +170,7 @@ h2 {
 /*make columns*/
 .column {
   flex: 50%;
+  margin: 5px;
 }
 
 .row {
@@ -183,7 +184,7 @@ h2 {
 
 
 .fit {
-  width: 100%
+  width: 100%;
 }
 
 /* Links that open files in the editor */
