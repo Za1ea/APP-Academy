@@ -1,8 +1,9 @@
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #d3d9e3;
+  --color-bg: #d3dff5;
   --color-text-main: #000000;
   --color-primary: #03254f;
+  --color-secondary: #c9d8f0;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -50,6 +51,11 @@
   white-space: nowrap;
   margin-left: auto;
 }
+
+img {
+  margin: 5px;
+}
+
 .btn--remix img {
   margin-right: 0.5rem;
 }
@@ -145,7 +151,7 @@ button,
 input {
   font-family: inherit;
   font-size: 100%;
-  background: #FFFFFF;
+  background: var(--color-secondary);
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -161,6 +167,8 @@ input {
 h2 {
   color: #2800FF;
 }
+
+
 
 /* Interactive image */
 .illustration:active {
