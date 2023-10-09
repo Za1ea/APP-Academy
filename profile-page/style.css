@@ -1,4 +1,3 @@
-/* Our default values set as CSS variables */
 :root {
   --color-bg: #d3dff5;
   --color-text-main: #000000;
@@ -29,6 +28,11 @@
   font-family: HK Grotesk;
   font-weight: bold;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+@font-face {
+  font-family: Christmas Wish;
+  src: url("https://cdn.glitch.global/cbcc78d1-f9cf-45eb-b9b4-2fe4c0512b53/ChristmasWishCalligraphyCalligraphy-yKzZ.ttf?v=1696351521543")
     format("opentype");
 }
 
@@ -121,11 +125,11 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
-  font-family: Garamond, serif;
+  color: #4209ed;
+  font-family: Christmas Wish;
   font-style: normal;
-  font-weight: bold;
-  font-size: 400%;
+  font-weight: 600;
+  font-size: 500%;
   line-height: 105%;
   margin: 0;
 }
@@ -163,11 +167,12 @@ input {
   background-color: gray;
 }
 
-/* Subheading */
-h2 {
-  color: #2800FF;
-}
 
+
+.purple {
+  color: #6626f0;
+  font-weight: bold;
+}
 
 
 /* Interactive image */
@@ -175,7 +180,16 @@ h2 {
   transform: translateY(5px);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem auto 0;
+}
+
 /*make columns*/
+
+
 .column {
   flex: 50%;
   margin: 5px;
@@ -192,7 +206,8 @@ h2 {
 
 
 .fit {
-  width: 100%;
+  max-width: 100%;
+  width: 50%;
 }
 
 /* Links that open files in the editor */
