@@ -1,3 +1,6 @@
+//import stolenItems
+import { stolenItems } from './data.js';
+
 // PROBLEM ONE
 // Given an object of the stolen items for a household, return the total amount of items stolen (number). If nothing was robbed, return the string "Lucky you!”.
 
@@ -45,19 +48,51 @@ console.log(isStolen(stolenItems[2], "spoons"));
 // Given an array of objects representing an entire neighborhood, return the most frequently stolen item. This is NOT the item that has been stolen from the most households, this is the item that has been stolen the most times TOTAL. 
 
 function neighborhoodTotal(arr) {
-  let stolenItemsArr = stolenItems[2];
+  let stolenItemsArr = Array(arr[0].length).fill(0);
+  let idx = 0;
+  console.log(arr);
   for (let house in arr) {
-    for (let item in house) {
-      stolenItemsArr[item] = house[item];
+    // idx = 0;
+    console.log(house);
+    for (let i = 0; i < house.length; i++) {
+      let item = Object.keys(house)[i];
+      stolenItemsArr[i] += house[item];
+      // console.log(i);
     }
   }
 
-  return total; 
+  // console.log(stolenItemsArr);
+
+  let maxIdx = arrMax(stolenItemsArr, idx = true);
+  let key = Object.keys(arr[0])[maxIdx];
+  let value = arrMax(stolenItemsArr, idx = false);
+
+  let total = key + maxIdx + value;
+  return value; 
+  
+}
+
+function arrMax(arr, idx = true) {
+  let max = arr[0];
+  let maxIdx = 0;
+
+  for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+          maxIdx = i;
+          max = arr[i];
+      }
+  }
+  if (idx == true){
+    return maxIdx;
+  }
+  else {
+    return max;
+  }
   
 }
 
 // uncomment these out to test it out
-//console.log(houseTotal(stolenItems)); 
+console.log(neighborhoodTotal(stolenItems)); 
 
 
 

@@ -1,5 +1,5 @@
 
-let stolenItems = [
+export let stolenItems = [
  {
   socks: 7,
   spoons: 20,

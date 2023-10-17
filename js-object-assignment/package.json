@@ -1,0 +1,12 @@
+{
+  "name": "js-object-assignment",
+  "version": "1.0.0",
+  "description": "my js object assignment",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zalea",
+  "license": "ISC"
+}
