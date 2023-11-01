@@ -187,6 +187,10 @@ input {
   margin: 1rem auto 0;
 }
 
+.comment {
+  border: var(--color-primary);
+}
+
 /*make columns*/
 
 
