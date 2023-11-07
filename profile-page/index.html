@@ -100,22 +100,22 @@
           </p>
             <div class="row">
               <div class="column">
-                <p class="purple">Hobbies:</p>
+                <h3 class="purple">Hobbies:</h3>
                 <p>
                   <ul>
                     <li>Reading fantasy/sci-fi books</li>
-                    <li>Reading about new science discoveries</li>
+                    <li>Reading about new scientific discoveries</li>
                     <li>Playing piano</li>
                     <li>Color guard</li>
                   </ul>
                 </p>
               </div>
               <div class="column">
-                <p class="purple">Favorite:</p>
+                <h3 class="purple">Favorite:</h3>
                 <p>
                   <ul>
-                    <li>Colors - blue and purple</li>
-                    <li>Subjects - math and science</li>
+                    <li>Colors      - blue and purple</li>
+                    <li>Subjects    - math and science</li>
                     <li>Book series - The Wheel of Time and the entire Cosmere</li>
                     <li>Piano piece - Fantasie Impromptu by Chopin</li>
                   </ul>
@@ -132,12 +132,20 @@
           </p>
         </div>
 
+        <!-- Form for posting comments
+        Sends info to sheetdb API with js event listener
+        -->
         <div class="comment">
+          <h2 class="purple">Leave a comment!</h2>
           <form method="post" id="sheetdb-form" action="https://sheetdb.io/api/v1/tyubq6ndvcsd5">
-            Name: <br><input name="data[name]"><br><br>
-            Comment: <br><input name="data[comment]"><br><br>
+            Name: <br><input class="fit" name="data[name]"><br><br>
+            Comment: <br><input class="fit" name="data[comment]"><br><br>
             <button type="submit">Submit</button>
           </form>
+        </div>
+
+        <div id="comments">
+          
         </div>
         
       </div>
