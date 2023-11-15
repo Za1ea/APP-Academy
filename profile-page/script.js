@@ -9,8 +9,6 @@ form.addEventListener("submit", e => {
   }).then(
       response => response.json()
   ).then((html) => {
-    // you can put any JS code here
-    alert('success');
     retrieveComments();
   });
 });
@@ -24,7 +22,7 @@ window.onload = function() {
 }
 
 function retrieveComments() {
-  alert("retrieved");
+  let offset = document.getElementById("comments").childElementCount;
   fetch('https://sheetdb.io/api/v1/tyubq6ndvcsd5?sort_by=id')
   .then((response) => response.json())
   .then((data) => postComment(data));
